@@ -6,13 +6,13 @@ namespace Practice
     {
         static void Main(string[] args)
         {
-            const string MorningText = "Good morning, guys";
-            const string DayText = "Good day, guys";
-            const string EveningText = "Good evening, guys";
-            const string NightText = "Good night, guys";
+            const string MorningText = "Good morning, guys!";
+            const string DayText = "Good day, guys!";
+            const string EveningText = "Good evening, guys!";
+            const string NightText = "Good night, guys!";
 
             var today = DateTime.Now.TimeOfDay;
-
+            
             if (today.Hours > 9 && today.Hours < 12)
             {
                 Console.WriteLine(MorningText);
@@ -30,6 +30,8 @@ namespace Practice
                 Console.WriteLine(NightText);
             }
 
+            var stringTime = $"Right now time: {today.Hours}:{today.Minutes}:{today.Seconds}";
+            Console.WriteLine(stringTime);
             Console.ReadKey();
 
         }
