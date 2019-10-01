@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace BusinessLogic.Services
 {
@@ -18,6 +19,7 @@ namespace BusinessLogic.Services
             Console.WriteLine(new string('-', 30));
             tempArrat[2] = tempArrat[2] * 10;
             WriteInConsole(tempArrat);
+            Console.WriteLine($"Max elem: {tempArrat.Max()}");
         }
 
         public void WriteInConsole(int[] intArray)
