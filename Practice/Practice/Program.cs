@@ -12,8 +12,8 @@ namespace Practice
 
         static void RunTask()
         {
-            var cw = new FourCwService();
-            cw.GetCurrentTime();
+            var fcs = new FourCwService();
+            fcs.GetCurrentTime();
             Console.ReadKey();
         }
     }
