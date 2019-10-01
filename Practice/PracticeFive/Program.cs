@@ -10,6 +10,7 @@ namespace PracticeFive
         {
             RunTask();
         }
+
         static void RunTask()
         {
             var fcs = new FiveCwService();

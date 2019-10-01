@@ -7,22 +7,20 @@ namespace BusinessLogic.Services
     {
         public void WorkWithArray()
         {
-            var tempArrat = new int[] {
-                new Random().Next(0, 50),
-                new Random().Next(0, 50),
-                new Random().Next(0, 50),
-                new Random().Next(0, 50),
-                new Random().Next(0, 50),
-                new Random().Next(0, 50)
-            };
-            WriteInConsole(tempArrat);
+            var minValue = 0;
+            var maxValue = 50;
+            var randNum = new Random();
+            var tempArray = Enumerable.Repeat(0, 5)
+                .Select(i => randNum.Next(minValue, maxValue))
+                .ToArray(); 
+            WriteInConsole(tempArray);
             Console.WriteLine(new string('-', 30));
-            tempArrat[2] = tempArrat[2] * 10;
-            WriteInConsole(tempArrat);
-            Console.WriteLine($"Max elem: {tempArrat.Max()}");
+            tempArray[2] = tempArray[2] * 10;
+            WriteInConsole(tempArray);
+            Console.WriteLine($"Max elem: {tempArray.Max()}");
         }
 
-        public void WriteInConsole(int[] intArray)
+        private void WriteInConsole(int[] intArray)
         {
             foreach (var item in intArray)
             {
