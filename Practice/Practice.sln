@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "BusinessLo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{10C5481E-DEFB-4E55-91F6-CE3A7FBD3A87}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{B8863DD2-675F-46FF-917C-F61ED5AC60D5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Practice.UI", "3. Practice.UI", "{B8863DD2-675F-46FF-917C-F61ED5AC60D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Practice.BusinessLogic", "1. Practice.BusinessLogic", "{83F41837-14B0-48F8-A990-9B1651AEB0A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Practice.Common", "2. Practice.Common", "{611837AC-7C81-4CDA-819A-5F85EC858F06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +36,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CEACC7DF-955A-43EA-A06A-DE6460FE9567} = {B8863DD2-675F-46FF-917C-F61ED5AC60D5}
+		{68C23E86-924D-449C-9DD2-35CD020A60EC} = {83F41837-14B0-48F8-A990-9B1651AEB0A3}
+		{10C5481E-DEFB-4E55-91F6-CE3A7FBD3A87} = {611837AC-7C81-4CDA-819A-5F85EC858F06}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {49C411E0-30E3-454C-97DC-A3B30C164503}
