@@ -13,6 +13,7 @@ namespace BusinessLogic.Services
             var listInt = new List<int>();
             int[] emptyArray = listInt.ToArray();
             WriteInConsole(emptyArray);
+            Console.WriteLine(emptyArray);
             Console.WriteLine($"{textPossibleInfo}");
             Console.WriteLine(new string('-', 50));
         }
@@ -52,7 +53,7 @@ namespace BusinessLogic.Services
                 itemOne, itemTwo
             };
             Console.WriteLine("Unboxing при считывание по элементам");
-            WriteInConsole(tempArray);
+            WriteInConsoleUnboxingShortType(tempArray);
         }
 
         private void WriteInConsole<T>(T[] array)
@@ -60,6 +61,14 @@ namespace BusinessLogic.Services
             foreach (var item in array)
             {
                 Console.WriteLine(item);
+            }
+        }
+
+        private void WriteInConsoleUnboxingShortType(object[] array)
+        {
+            foreach (var item in array)
+            {
+                Console.WriteLine((short)item);
             }
         }
     }
