@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Common.Constants;
 
 namespace BusinessLogic.Services
 {
@@ -8,59 +9,61 @@ namespace BusinessLogic.Services
     {
         public void FirstTask()
         {
-            Console.WriteLine("First Task");
-            const string textPossibleInfo = "Everything is possible in this life";
+            Console.WriteLine(SixCw.TextFirstTaskInfo);
             var listInt = new List<int>();
             int[] emptyArray = listInt.ToArray();
             WriteInConsole(emptyArray);
-            Console.WriteLine(emptyArray);
-            Console.WriteLine($"{textPossibleInfo}");
-            Console.WriteLine(new string('-', 50));
+            Console.WriteLine(SixCw.TextPossibleInfo);
+            Console.WriteLine(SixCw.TextManyLinesInfo);
         }
 
         public void SecondTask()
         {
-            Console.WriteLine("Second Task");
+            Console.WriteLine(SixCw.TextSecondTaskInfo);
             object[] arrayThreeItems = { 32, 'A', "Hello" };
             WriteInConsole(arrayThreeItems);
-            Console.WriteLine(new string('-', 50));
+            Console.WriteLine(SixCw.TextManyLinesInfo);
             arrayThreeItems[0] = (int)arrayThreeItems[0] + 10;
             arrayThreeItems[1] = $"{arrayThreeItems[1]}, guys!";
             WriteInConsole(arrayThreeItems);
-            Console.WriteLine(new string('-', 50));
+            Console.WriteLine(SixCw.TextManyLinesInfo);
         }
 
         public void ThirdTask()
         {
-            Console.WriteLine("Third Task");
-            var minValue = 0;
-            var maxValue = 50;
+            Console.WriteLine(SixCw.TextThridTaskInfo);
             var randNum = new Random();
-            var tempArray = Enumerable.Repeat(0, 12)
-                .Select(i => randNum.Next(minValue, maxValue))
+            var tempArray = Enumerable.Repeat(SixCw.InitRangeValueDefault, SixCw.FinishRangeValueRepeatDefault)
+                .Select(i => randNum.Next(SixCw.InitRangeValueDefault, SixCw.FinishRangeValueDefault))
                 .ToArray();
             WriteInConsole(tempArray);
             Console.WriteLine($"Max elem: {tempArray.Max()}");
-            Console.WriteLine(new string('-', 50));
+            Console.WriteLine(SixCw.TextManyLinesInfo);
         }
 
         public void FourthTask()
         {
-            Console.WriteLine("Fourth Task");
+            Console.WriteLine(SixCw.TextFourthTaskInfo);
             short itemOne = 2;
             short itemTwo = 3;
             object[] tempArray = {
                 itemOne, itemTwo
             };
-            Console.WriteLine("Unboxing при считывание по элементам");
+            Console.WriteLine(SixCw.TextUnboxingInfo);
             WriteInConsoleUnboxingShortType(tempArray);
         }
 
+        /// <summary>
+        /// Method writes in console and do to unboxing
+        /// </summary>
+        /// <typeparam name="T">Any type</typeparam>
+        /// <param name="array">Any array</param>
         private void WriteInConsole<T>(T[] array)
         {
             foreach (var item in array)
             {
-                Console.WriteLine(item);
+                var result = Convert.ChangeType(item, item.GetType());
+                Console.WriteLine(result);
             }
         }
 
