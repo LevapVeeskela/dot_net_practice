@@ -1,9 +1,9 @@
-﻿using BusinessLogic.Services;
-using System;
+﻿using System;
+using BusinessLogic.Services;
 
-namespace Practice
+namespace FourLessonSecondTask
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -13,7 +13,6 @@ namespace Practice
         static void RunTask()
         {
             var fcs = new FourCwService();
-            fcs.GetCurrentTime();
             fcs.GetCountLetterAInWord();
             Console.ReadKey();
         }

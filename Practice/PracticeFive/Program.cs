@@ -1,11 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using BusinessLogic.Services;
 
 namespace PracticeFive
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            RunTask();
+        }
+
+        static void RunTask()
+        {
+            var fcs = new FiveCwService();
+            fcs.WorkWithArray();
+            Console.ReadKey();
+        }
+
+        static void WorkInClass()
         {
             var collection = new List<object>();
             var collection2 = new List<object>
