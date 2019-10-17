@@ -1,4 +1,5 @@
 ﻿using System;
+using Common.Constants;
 using Infrastructure.Interfaces;
 
 namespace BusinessLogic.Services
@@ -7,9 +8,9 @@ namespace BusinessLogic.Services
     {
         public object[] GetThreeForm()
         {
-            var triangle = new Triangle(10, 20, "Triangle");
-            var circle = new Circle(10, "circle");
-            var foursquare = new Foursquare(10, "Foursquare");
+            var triangle = new Triangle(Constants.TenLesson.Basis, Constants.TenLesson.Height, Constants.TenLesson.NameTriangle);
+            var circle = new Circle(Constants.TenLesson.Radius, Constants.TenLesson.NameCircle);
+            var foursquare = new Foursquare(Constants.TenLesson.Side, Constants.TenLesson.NameSide);
             object[] array = { triangle, circle, foursquare };
             return array;
         }
@@ -19,7 +20,7 @@ namespace BusinessLogic.Services
             foreach (var form in array)
             {
                 var tempForm = form as ISquare;
-                Console.WriteLine($"This is {tempForm.Name}. CLR Type is {form.GetType().FullName}. Square is {tempForm.GetSquare()}");
+                Console.WriteLine($"This is {tempForm?.Name}. CLR Type is {form.GetType().FullName}. Square is {tempForm?.GetSquare()}");
             }
         }
 
