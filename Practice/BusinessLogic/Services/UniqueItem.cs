@@ -5,13 +5,11 @@ namespace BusinessLogic.Services
 {
     public class UniqueItem
     {
-        private readonly int _item;
         public UniqueItem(int item = 0)
         {
-            _item = item + TenLessonSecondTask.Item + 1;
-            TenLessonSecondTask.Item = _item;
-            Console.WriteLine(_item);
+            var item1 = item + TenLessonSecondTask.Item + 1;
+            TenLessonSecondTask.Item = item1;
+            Console.WriteLine(item1);
         }
-
     }
 }
