@@ -23,7 +23,6 @@ namespace BusinessLogic.Services
             }
         }
 
-
         public class Triangle : ISquare
         {
             private const double Half = 0.5;
@@ -44,6 +43,7 @@ namespace BusinessLogic.Services
                 return (ushort)(Half * _basis * _height);
             }
         }
+
         public class Circle : ISquare
         {
             private readonly ushort _radius;
@@ -61,6 +61,7 @@ namespace BusinessLogic.Services
                 return (ushort)(Math.PI * _radius * _radius);
             }
         }
+
         public class Foursquare : ISquare
         {
             private readonly ushort _side;
