@@ -21,14 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FourLessonSecondTask", "Fou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SixLessonTask", "SixLessonTask\SixLessonTask.csproj", "{893786C6-01AE-4E09-8BCD-0526E46A728B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenLessonFirstTask", "TenLessonFirstTask\TenLessonFirstTask.csproj", "{C239BA7A-C0DE-48AA-AD2F-24BBFCC01BD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TenLessonFirstTask", "TenLessonFirstTask\TenLessonFirstTask.csproj", "{C239BA7A-C0DE-48AA-AD2F-24BBFCC01BD5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Practice.Infrastructure", "4. Practice.Infrastructure", "{23F50D24-8ECE-4F41-8C61-3D8B3D86B9F3}"
-	ProjectSection(SolutionItems) = preProject
-		TenLessonFirstTask\Program.cs = TenLessonFirstTask\Program.cs
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{6C948DF4-EE3D-4A7D-B632-07EDD2FF065E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{6C948DF4-EE3D-4A7D-B632-07EDD2FF065E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,13 +7,20 @@ namespace TenLessonFirstTask
     {
         static void Main(string[] args)
         {
-            RunTask();
+            RunFirstTask();
+            RunSecondTask();
         }
 
-        static void RunTask()
+        static void RunFirstTask()
         {
             var tcfts = new TenCwFirstTaskService();
             tcfts.WriteInConsole(tcfts.GetThreeForm());
+        }
+        static void RunSecondTask()
+        {
+            var firstItem = new UniqueItem();
+            var secondItem = new UniqueItem(10);
+            var thirdItem = new UniqueItem();
             Console.ReadKey();
         }
     }
