@@ -1,7 +1,7 @@
 ﻿using System;
 using BusinessLogic.Services;
 using Common.Constants;
-using Common.Extantions;
+using Common.Extensions;
 using Common.Models;
 
 namespace ThirteenLessonFirstTask

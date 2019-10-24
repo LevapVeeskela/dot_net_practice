@@ -1,6 +1,6 @@
-﻿namespace Common.Extantions
+﻿namespace Common.Extensions
 {
-    public static class StringExtanttions
+    public static class StringExtensions
     {
         public static string SubstringFirstLetter(this string row)
         {
