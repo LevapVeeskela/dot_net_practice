@@ -1,5 +1,6 @@
 ﻿using System;
 using BusinessLogic.Services;
+using Common.Constants;
 using Common.Extantions;
 using Common.Models;
 
@@ -26,8 +27,7 @@ namespace ThirteenLessonFirstTask
 
         static void RunSecondTask()
         {
-            const string TextInfo = "Please, enter value more 5 letters";
-            Console.WriteLine(TextInfo);
+            Console.WriteLine(Constants.ThirteenCw.TextEnterValueInfo);
             Console.Write(Console.ReadLine().SubstringFirstLetter());
             Console.ReadKey();
         }
